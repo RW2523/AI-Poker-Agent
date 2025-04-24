@@ -180,7 +180,7 @@ class RoundManager:
       player.add_action_history(Const.Action.FOLD)
       player.pay_info.update_to_fold()
     else:
-      raise ValueError("Unexpected action %s received" % action)
+      raise ValueError(f"Unexpected action {action} received")
     return state
 
   @classmethod
